@@ -1,0 +1,61 @@
+.tool-tip {
+  height: 100vh;
+  background: #333; }
+  .tool-tip .container {
+    height: 100%; }
+    .tool-tip .container .row {
+      height: 100%; }
+      .tool-tip .container .row .col {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .tool-tip .container .row .col nav {
+          padding: 0;
+          margin: 0; }
+          .tool-tip .container .row .col nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none; }
+            .tool-tip .container .row .col nav ul li {
+              position: relative;
+              width: 20px;
+              height: 20px;
+              background: #777;
+              margin: 0 20px;
+              cursor: pointer;
+              transition: .5s all ease-in-out;
+              border-radius: 50%; }
+              .tool-tip .container .row .col nav ul li:hover {
+                background: #86ff3b;
+                box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b; }
+                .tool-tip .container .row .col nav ul li:hover .content {
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate(-50%, 0px); }
+              .tool-tip .container .row .col nav ul li .content {
+                position: absolute;
+                bottom: 55px;
+                width: 400px;
+                background: #fff;
+                padding: 20px;
+                visibility: hidden;
+                opacity: 0;
+                transition: .5s all ease-in-out;
+                transform: translate(-50%, -50px); }
+                .tool-tip .container .row .col nav ul li .content::before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  width: 30px;
+                  height: 30px;
+                  background: #ffffff;
+                  bottom: -15px;
+                  left: 194px;
+                  transform: rotate(45deg); }
+                .tool-tip .container .row .col nav ul li .content h2 {
+                  padding: 0;
+                  margin: 0;
+                  font-size: 1.2em;
+                  margin-bottom: 5px; }

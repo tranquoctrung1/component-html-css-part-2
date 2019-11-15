@@ -1,0 +1,62 @@
+.tool-tip
+	height: 100vh
+	background: #333
+	.container
+		height: 100%
+		.row
+			height: 100%
+			.col
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				nav
+					padding: 0
+					margin: 0
+					ul 
+						margin: 0
+						padding: 0
+						display: flex
+						list-style-type: none
+						li 
+							position: relative
+							width: 20px
+							height: 20px
+							background: #777
+							margin: 0 20px
+							cursor: pointer
+							transition: .5s all ease-in-out
+							border-radius: 50%
+							&:hover
+								background: #86ff3b
+								box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b
+								.content
+									visibility: visible
+									opacity: 1
+									transform: translate(-50%, 0px)
+							.content
+								position: absolute
+								bottom: 55px
+								width: 400px
+								background: #fff 
+								padding: 20px
+								visibility: hidden
+								opacity: 0
+								transition: .5s all ease-in-out
+								transform: translate(-50%, -50px)
+								&::before
+										content: ''
+										display: block
+										position: absolute
+										width: 30px
+										height: 30px
+										background: #ffffff
+										bottom: -15px
+										left: 194px
+										transform: rotate(45deg)
+								h2 
+									padding: 0
+									margin: 0
+									font-size: 1.2em
+									margin-bottom: 5px
+

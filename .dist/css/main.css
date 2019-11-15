@@ -59,3 +59,55 @@
                   margin: 0;
                   font-size: 1.2em;
                   margin-bottom: 5px; }
+
+.typing-text-menu-hover {
+  height: 100vh; }
+  .typing-text-menu-hover .container {
+    height: 100%; }
+    .typing-text-menu-hover .container .row {
+      height: 100%; }
+      .typing-text-menu-hover .container .row .col {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .typing-text-menu-hover .container .row .col nav {
+          margin: 0;
+          padding: 0; }
+          .typing-text-menu-hover .container .row .col nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0; }
+            .typing-text-menu-hover .container .row .col nav ul li {
+              margin: 0 20px;
+              font-size: 4em; }
+              .typing-text-menu-hover .container .row .col nav ul li a {
+                position: relative;
+                color: #eee;
+                font-weight: 700;
+                text-decoration: none; }
+                .typing-text-menu-hover .container .row .col nav ul li a::before {
+                  content: attr(data-text);
+                  display: block;
+                  position: absolute;
+                  top: -5px;
+                  overflow: hidden;
+                  color: #262626;
+                  white-space: nowrap;
+                  transition: .5s all ease-in-out; }
+            .typing-text-menu-hover .container .row .col nav ul:hover li a::before {
+              animation: typing-text-menu-hover1 1s steps(10) forwards; }
+            .typing-text-menu-hover .container .row .col nav ul:hover li:hover a::before {
+              animation: typing-text-menu-hover2 1s steps(10) forwards; }
+
+@keyframes typing-text-menu-hover1 {
+  0% {
+    width: 358px; }
+  100% {
+    width: 0; } }
+
+@keyframes typing-text-menu-hover2 {
+  0% {
+    width: 0; }
+  100% {
+    width: 358px; } }

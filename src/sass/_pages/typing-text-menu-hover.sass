@@ -1,0 +1,56 @@
+.typing-text-menu-hover
+	height: 100vh
+	.container
+		height: 100%
+		.row
+			height: 100%
+			.col
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				nav 
+					margin: 0
+					padding: 0
+					ul 
+						list-style-type: none
+						margin: 0
+						padding: 0
+						li 
+							margin: 0 20px
+							font-size: 4em 
+							a 
+								position: relative
+								color: #eee
+								font-weight: 700
+								text-decoration: none
+								&::before
+									content: attr(data-text)
+									display: block
+									position: absolute
+									top: -5px
+									overflow: hidden
+									color: #262626
+									white-space: nowrap
+									transition: .5s all ease-in-out
+						&:hover
+							li 
+								a
+									&::before
+										animation: typing-text-menu-hover1 1s steps(10) forwards
+								&:hover 
+									a
+										&::before
+											animation: typing-text-menu-hover2 1s steps(10) forwards
+
+@keyframes typing-text-menu-hover1
+	0%
+		width: 358px
+	100%
+		width: 0
+
+@keyframes typing-text-menu-hover2
+	0%
+		width: 0
+	100%
+		width: 358px

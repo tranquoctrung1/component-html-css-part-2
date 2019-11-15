@@ -111,3 +111,27 @@
     width: 0; }
   100% {
     width: 358px; } }
+
+.pulse-effect-on-click {
+  height: 100vh;
+  position: relative; }
+  .pulse-effect-on-click .circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #000000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: pulse .5s linear forwards; }
+
+@keyframes pulse {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1; }
+  70% {
+    opacity: 1; }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0; } }

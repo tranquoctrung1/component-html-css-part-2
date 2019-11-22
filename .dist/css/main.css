@@ -177,3 +177,36 @@
   100% {
     transform-origin: bottom;
     transform: scaleY(0); } }
+
+.text-loadding {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222f3e; }
+  .text-loadding .loading {
+    position: relative;
+    font-size: 6em;
+    font-weight: bold;
+    color: #222;
+    border-bottom: 10px solid #222;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1.2em; }
+    .text-loadding .loading::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #03a9f4;
+      overflow: hidden;
+      border-bottom: 10px solid #03a9f4;
+      animation: text-loading 8s linear infinite; }
+
+@keyframes text-loading {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }

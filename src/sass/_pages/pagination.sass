@@ -1,0 +1,54 @@
+.pagination
+	height: 100vh
+	width: 100%
+	background: #1ce37c 
+	.container
+		height: 100%
+		.row
+			height: 100%
+			.col
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				nav
+					ul 
+						position: relative
+						list-style-type: none 
+						display: flex
+						border-radius: 50px
+						align-items: center
+						padding: 10px 20px
+						box-shadow: 0 5px 15px rgba(0,0 ,0,.2 )
+						background: #ffffff
+						li 
+							margin: 0 10px
+							&.page-numbers
+								width: 50px
+								height: 50px
+								text-align: center
+								line-height: 50px
+								a 
+									display: block
+									text-decoration: none
+									color: #777777
+									font-weight: 600
+									border-radius: 50%
+								&:hover, &.active
+									a
+										background: #333333
+										color: #fff 
+							&:last-child
+								margin-right: 20px
+								font-weight: 700
+								font-size: 20px
+								a 
+									color: #777777
+									text-decoration: none
+							&:first-child
+								margin-left: 20px
+								font-weight: 700
+								font-size: 20px
+								a
+									color: #777777
+									text-decoration: none

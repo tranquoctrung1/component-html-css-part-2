@@ -70,4 +70,20 @@ $(document).ready(function()
   }
   
   pulseSection.addEventListener('click',pulse);
+
+
+  //pagination section
+  $('.pagination .next').on('click', (e) =>
+  {
+    e.preventDefault();
+    $(this).find('.page-numbers.active').next().addClass('active')
+    $(this).find('.page-numbers.active').prev().removeClass('active')
+  })
+
+  $('.pagination .prev').on('click', (e) =>
+  {
+    e.preventDefault();
+    $(this).find('.page-numbers.active').prev().addClass('active')
+    $(this).find('.page-numbers.active').next().removeClass('active')
+  })
 });

@@ -61,7 +61,7 @@ function noi_file_css ()
         'bower_components/font-awesome/css/font-awesome.min.css',
         'node_modules/@fortawesome/fontawesome-free/css/all.css',
         'bower_components/animate.css/animate.min.css',
-        'bower_components/jquery-lazy/jquery.lazy.min.js',
+        'bower_components/lightgallery.js/dist/css/lightgallery.css',
         // owl carousel
         'bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
         'bower_components/owl.carousel/dist/assets/owl.theme.default.min.css',
@@ -124,7 +124,12 @@ function noi_file_js ()
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/popper.js/dist/umd/popper.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
-
+        'bower_components/lightgallery.js/dist/js/lightgallery.min.js',
+        'bower_components/lg-thumbnail.js/dist/lg-thumbnail.min.js',
+        'bower_components/lg-fullscreen/dist/lg-fullscreen.min.js',
+        'node_modules/vimeo/lib/vimeo.js',
+        'bower_components/lg-video/dist/lg-video.min.js',
+        'bower_components/froogaloop2/froogaloop2.min.js',
         // owl carousel
         'bower_components/owl.carousel/dist/owl.carousel.min.js'
     ])

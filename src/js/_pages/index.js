@@ -87,3 +87,12 @@ $(document).ready(function()
     $(this).find('.page-numbers.active').next().removeClass('active')
   })
 });
+
+// gallery section
+  lightGallery(document.getElementById('animated-thumbnials'), {
+    thumbnail:true
+  });
+
+
+// gallery-video section
+  lightGallery(document.getElementById('video-gallery')); 

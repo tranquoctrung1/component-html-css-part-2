@@ -129,7 +129,7 @@ function noi_file_js ()
         'bower_components/lg-fullscreen/dist/lg-fullscreen.min.js',
         'node_modules/vimeo/lib/vimeo.js',
         'bower_components/lg-video/dist/lg-video.min.js',
-        'bower_components/froogaloop2/froogaloop2.min.js',
+        'froogaloop2/froogaloop2.min.js',
         // owl carousel
         'bower_components/owl.carousel/dist/owl.carousel.min.js'
     ])
